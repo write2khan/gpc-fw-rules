@@ -1,0 +1,8 @@
+include: 
+  - project: 'hybrid-cloud/hyc_templates/pipelines_template'
+    ref: production
+    file: 'Feature/gcp/gcp.iwr.feature.template.gitlab-ci.yml'
+
+variables:
+   TENANT_NAME: hyc_sharedvpc_hostproject_npe
+   FEATURE_NAME: sharedvpc_hostproject_fw_rules
